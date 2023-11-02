@@ -20,7 +20,7 @@ const Register = (props) => {
     try {
       setData({ ...data, error: null });
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://authentication-backend-3irf.onrender.com/api/auth/register",
         { name, email, password },
         {
           headers: {
