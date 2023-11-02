@@ -20,7 +20,7 @@ const Register = (props) => {
     try {
       setData({ ...data, error: null });
       await axios.post(
-        "https://localhost:5000/api/auth/register",
+        "http://localhost:5000/api/auth/register",
         { name, email, password },
         {
           headers: {

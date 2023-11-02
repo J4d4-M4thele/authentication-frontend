@@ -19,7 +19,7 @@ const Login = (props) => {
     try {
       setData({ ...data, error: null });
       const res = await axios.post(
-        "https://localhost:5000/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         { email, password },
         {
           headers: {
